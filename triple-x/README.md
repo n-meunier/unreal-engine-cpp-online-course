@@ -1,10 +1,15 @@
-* Section 2: Triple X
+# Section 2: Triple X
 
 The goal of this section is to refresh pure C++ coding.  
 
 The game is a code solving problem. You are a secret agent in charge of opening a serie of secure server rooms to extract files. Each room has to be opened by guessing the correct code.
 
-** Concepts reviewed
+## How to use
+
+1. Run `./triplex`
+2. For each level, input 3 numbers solving the code. Ex: `2 3 4`.
+
+## Concepts reviewed
 
 - Main function
 - Variable declaration and assignment

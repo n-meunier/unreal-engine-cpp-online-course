@@ -2,13 +2,13 @@
 
 void PrintIntroduction(int Difficulty)
 {
-     // Print welcome messages to the terminal
-    // std::cout << "  _____     _       _     __  __\n";
-    // std::cout << " |_   _| __(_)_ __ | | ___\ \/ /\n";
-    // std::cout << "   | || '__| | '_ \| |/ _ \\  / \n";
-    // std::cout << "   | || |  | | |_) | |  __//  \ \n";
-    // std::cout << "   |_||_|  |_| .__/|_|\___/_/\_\\\n";
-    // std::cout << "             |_|                \n";
+    // Print welcome messages to the terminal
+    std::cout << "\n    _____     _       _       __  __\n";
+    std::cout << "\n   |_   _| __(_)_ __ | | ___  \\ \\/ /\n";
+    std::cout << "\n     | || '__| | '_ \\| |/ _ \\  \\  / \n";
+    std::cout << "\n     | || |  | | |_) | |  __/  /  \\ \n";
+    std::cout << "\n     |_||_|  |_| .__/|_|\\___| /_/\\_\\ \n";
+    std::cout << "\n               |_|                  \n";
     std::cout << "\n\nYou are a secret agent breaking into a level " << Difficulty << " secure server room\n";
     std::cout << "Enter the correct code to continue...\n\n";
 }

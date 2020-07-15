@@ -15,20 +15,20 @@ void PrintIntroduction(int Difficulty)
 
 bool PlayGame(int Difficulty)
 {
-    PrintIntroduction(Difficulty);
 
     const int MaxCodeNumber = 4;
 
     // Declare 3 number code
-    const int CodeA = (rand() % MaxCodeNumber + 1) * Difficulty;
-    const int CodeB = (rand() % MaxCodeNumber + 1) * Difficulty;
-    const int CodeC = (rand() % MaxCodeNumber + 1) * Difficulty;
+    const int CodeA = (rand() % MaxCodeNumber * Difficulty + 1);
+    const int CodeB = (rand() % MaxCodeNumber * Difficulty + 1);
+    const int CodeC = (rand() % MaxCodeNumber * Difficulty + 1);
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
     
     // Print sum and product to the terminal
-    std::cout << "* There are 3 numbers in the code";
+    std::cout << "Level " << Difficulty << " server room.";
+    std::cout << "\n* There are 3 numbers in the code";
     std::cout << "\n* The codes add-up to: " << CodeSum;
     std::cout << "\n* The codes multiply to give: " << CodeProduct << std::endl;
 
@@ -57,6 +57,8 @@ int main()
 {
     int LevelDifficulty = 1;
     const int MaxDifficulty = 5;
+    
+    PrintIntroduction(LevelDifficulty);
 
    while (LevelDifficulty <= MaxDifficulty) // Loop the game until all levels are cleared
    {

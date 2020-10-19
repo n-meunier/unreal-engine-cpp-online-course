@@ -3,7 +3,10 @@
 
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
-    HiddenWord = "computer";
+    
+    // Setting Up Game
+    InitGame();
+
     PrintLine(TEXT("[DEBUG] The HiddenWord is: %s"), *HiddenWord);
 
     Super::BeginPlay();
@@ -36,4 +39,10 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
         // Prompt to play again
         // Check User Input
         // PlayAgain or Quit
+}
+
+void UBullCowCartridge::InitGame()
+{
+    HiddenWord = TEXT("computer");
+    Lives = 4;
 }

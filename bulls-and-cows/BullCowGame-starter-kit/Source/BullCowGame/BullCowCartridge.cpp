@@ -28,6 +28,13 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     } 
     else
     {
+
+        // Check if right number of characters
+        if (Input.Len() != HiddenWord.Len())
+        {
+            PrintLine(TEXT("Please type a word with the %i of letters!"), HiddenWord.Len());
+        }
+
         // Prompt to GuessAgain
         PrintLine(TEXT("Wrong answer, try again!"));
     }
